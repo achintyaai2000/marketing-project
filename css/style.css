@@ -336,6 +336,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: border-color 0.3s;
+  margin-bottom: 10px;
 }
 
 .research-card:hover {
