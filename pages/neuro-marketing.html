@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NeuroMarketing research by AchintyaAI." />
+  <meta name="author" content="AchintyaAI" />
+  <title>NeuroMarketing | My Marketing Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/research.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px 20px;
+      margin: 24px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .chart-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .chart-card .chart-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .chart-card canvas {
+      max-height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="research-header">
+    <div class="container research-header-inner">
+      <div>
+        <a href="../index.html" class="back-link">← Back to home</a>
+        <h1 class="research-title">NeuroMarketing</h1>
+        <p class="research-meta">By Achintya &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp;</p>
+      </div>
+      <div class="research-badge">11 sections &nbsp;·&nbsp; tools &amp; charts &nbsp;·&nbsp; 15 Minutes</div>
+    </div>
+  </header>
+
+  <section class="toc-section">
+    <div class="container">
+      <h2>Table of Contents</h2>
+      <nav class="toc-grid">
+        <a href="#section1" data-num="01">Introduction &amp; Research Objective</a>
+        <a href="#section2" data-num="02">What Neuromarketing Means</a>
+        <a href="#section3" data-num="03">The Science Behind Consumer Decisions</a>
+        <a href="#section4" data-num="04">Tools and Techniques</a>
+        <a href="#section5" data-num="05">How Neuromarketing Influences Strategy</a>
+        <a href="#section6" data-num="06">Real-World Applications</a>
+        <a href="#section7" data-num="07">Ethical Concerns and Limitations</a>
+        <a href="#section8" data-num="08">Neuromarketing in the Digital Age</a>
+        <a href="#section9" data-num="09">Future Outlook</a>
+        <a href="#section10" data-num="10">Practical Takeaways for Marketers</a>
+        <a href="#section11" data-num="11">Conclusion</a>
+      </nav>
+    </div>
+  </section>
+
+  <main class="research-main">
+    <div class="container">
+      <article class="research-article">
+
+        <!-- ─── SECTION 1 ─── -->
+        <section id="section1" class="research-section">
+          <h2><span class="section-num">01</span> Introduction &amp; Research Objective</h2>
+          <p>Neuromarketing has emerged as one of the most interesting and influential developments in modern marketing. It combines neuroscience, psychology, and consumer research to understand how people actually respond to brands, ads, packaging, digital experiences, and pricing. Instead of relying only on what consumers say, neuromarketing looks at how they behave, what they notice, and how their brains and bodies react at a deeper level.</p>
+          <p>This matters because many purchase decisions are not fully rational. Consumers often believe they are making choices based only on price, utility, or comparison, but subconscious emotion, memory, attention, and habit play a major role. Neuromarketing helps uncover those hidden drivers so that marketers can design more effective campaigns and more user-friendly experiences.</p>
+          <p>The objective of this research is to explain neuromarketing in a simple, structured way and show how it influences marketing strategy in the real world. It also examines the tools used in the field, the ethical concerns involved, the role of digital platforms, and the likely future of the discipline. The goal is not to present neuromarketing as magic, but as a serious and evolving method for understanding consumers better.</p>
+
+          <h3>Research Objectives</h3>
+          <ul>
+            <li>To define neuromarketing clearly and simply.</li>
+            <li>To explain the science behind consumer decision-making.</li>
+            <li>To examine the major tools and techniques used in neuromarketing.</li>
+            <li>To study how brands apply neuromarketing insights in strategy.</li>
+            <li>To discuss limitations, privacy issues, and ethical concerns.</li>
+            <li>To explore future trends in neuromarketing and digital marketing.</li>
+          </ul>
+
+          <h3>Research Questions</h3>
+          <ul>
+            <li>What is neuromarketing?</li>
+            <li>How does consumer decision-making work at a subconscious level?</li>
+            <li>Which tools are used in neuromarketing research?</li>
+            <li>How do businesses apply neuromarketing in practice?</li>
+            <li>What are the ethical limits of the field?</li>
+            <li>What does the future of neuromarketing look like?</li>
+          </ul>
+        </section>
+
+        <!-- ─── SECTION 2 ─── -->
+        <section id="section2" class="research-section">
+          <h2><span class="section-num">02</span> What Neuromarketing Means</h2>
+          <p>Neuromarketing is the use of neuroscience-based methods to study consumer behavior. It measures how people respond to marketing stimuli at conscious and subconscious levels, using tools like EEG, eye tracking, facial coding, skin response, and fMRI. The idea is simple: instead of asking only what people say they like, neuromarketing tries to observe what actually captures their attention and triggers emotional response.</p>
+          <p>At its core, the field connects three disciplines: Neuroscience, which studies the brain and nervous system; Psychology, which studies thought, memory, emotion, and behavior; and Marketing, which studies how value is created and communicated.</p>
+
+          <h3>Core Meaning</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Term</th><th>Meaning</th><th>Marketing Relevance</th></tr></thead>
+              <tbody>
+                <tr><td>Attention</td><td>What the consumer notices first</td><td>Helps improve ad and packaging design</td></tr>
+                <tr><td>Emotion</td><td>What the consumer feels</td><td>Drives memory and preference</td></tr>
+                <tr><td>Memory</td><td>What stays in the mind</td><td>Improves brand recall</td></tr>
+                <tr><td>Motivation</td><td>What triggers action</td><td>Supports conversion and purchase</td></tr>
+                <tr><td>Choice</td><td>The final decision</td><td>Connects science to sales</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Neuromarketing is useful because traditional research does not always capture the full picture. A person may say one thing in a survey but respond differently when actually seeing an ad, product, or website. Neuromarketing helps marketers understand that gap and build strategies that reflect real behavior rather than stated preference.</p>
+        </section>
+
+        <!-- ─── SECTION 3 ─── -->
+        <section id="section3" class="research-section">
+          <h2><span class="section-num">03</span> The Science Behind Consumer Decisions</h2>
+          <p>Consumer decisions are shaped by both rational and emotional processes. People often like to think they choose logically, but most decisions are influenced by mental shortcuts, feelings, familiarity, habits, and subconscious associations. Neuromarketing studies these patterns to understand what truly drives behavior.</p>
+          <p>The brain tends to process information in stages. First comes attention, then emotion, then memory, and finally choice. If a marketing message fails at the attention stage, the rest of the process may never happen. That is why visual design, storytelling, and simplicity matter so much in marketing.</p>
+
+          <h3>Brain-Based Consumer Process</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Stage</th><th>What Happens</th><th>Marketing Implication</th></tr></thead>
+              <tbody>
+                <tr><td>Attention</td><td>Consumer notices the stimulus</td><td>Strong visuals and clear headlines matter</td></tr>
+                <tr><td>Emotion</td><td>Consumer feels something</td><td>Emotional storytelling improves response</td></tr>
+                <tr><td>Memory</td><td>Consumer stores the experience</td><td>Repetition and symbols help recall</td></tr>
+                <tr><td>Decision</td><td>Consumer chooses or delays</td><td>Trust and clarity improve conversion</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Why This Matters</h3>
+          <p>This science shows that purchase decisions are not just about product features. They are also about comfort, trust, identity, and emotional fit. A brand that understands these deeper layers can design better experiences and communicate more effectively.</p>
+        </section>
+
+        <!-- ─── SECTION 4 ─── -->
+        <section id="section4" class="research-section">
+          <h2><span class="section-num">04</span> Tools and Techniques Used in Neuromarketing</h2>
+          <p>Neuromarketing uses a variety of tools to measure how people react to marketing input. Some tools measure brain activity directly, while others measure physical responses that reflect emotion and attention. Together, they provide a more complete picture of consumer behavior.</p>
+
+          <h3>Main Tools Used</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Tool</th><th>What It Measures</th><th>Typical Use</th></tr></thead>
+              <tbody>
+                <tr><td>EEG</td><td>Electrical brain activity</td><td>Attention and engagement</td></tr>
+                <tr><td>fMRI</td><td>Brain blood-flow changes</td><td>Deeper emotional response</td></tr>
+                <tr><td>Eye Tracking</td><td>Visual focus and gaze path</td><td>Ads, websites, packaging</td></tr>
+                <tr><td>Facial Coding</td><td>Micro-expressions</td><td>Emotional reaction</td></tr>
+                <tr><td>GSR</td><td>Skin conductance</td><td>Arousal and intensity</td></tr>
+                <tr><td>Heart Rate</td><td>Physiological response</td><td>Stress or excitement</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Main Techniques</h3>
+          <ul>
+            <li><strong>EEG studies</strong> are used to understand engagement, attention, and cognitive effort.</li>
+            <li><strong>fMRI studies</strong> help identify brain regions activated by reward or emotion.</li>
+            <li><strong>Eye tracking</strong> reveals where consumers look first and what they ignore.</li>
+            <li><strong>Facial coding</strong> captures subtle reactions that surveys may miss.</li>
+            <li><strong>Implicit testing</strong> measures automatic associations and preferences.</li>
+          </ul>
+
+          <!-- BAR CHART: Tool Relevance -->
+          <div class="chart-card">
+            <p class="chart-title">Neuromarketing Tool — Research Use Score (out of 10)</p>
+            <canvas id="toolChart"></canvas>
+          </div>
+          <p>Eye tracking and EEG tend to be especially popular because they are highly actionable for ad and UX testing. These scores reflect relative usefulness across common neuromarketing applications.</p>
+        </section>
+
+        <!-- ─── SECTION 5 ─── -->
+        <section id="section5" class="research-section">
+          <h2><span class="section-num">05</span> How Neuromarketing Influences Marketing Strategy</h2>
+          <p>Neuromarketing changes strategy by making it more evidence-based and consumer-centered. It helps marketers identify what draws attention, what creates emotion, and what improves recall, so they can refine their campaigns more effectively.</p>
+          <p>One of the biggest strategic impacts is in advertising. Instead of guessing which version of an ad will work, companies can test multiple versions and observe which one creates stronger engagement. This can improve brand storytelling, visual hierarchy, and message clarity.</p>
+          <p>Another major area is packaging. A product may be functionally similar to competitors, but neuromarketing can reveal how different color palettes, shapes, and layouts affect shelf visibility and perceived quality.</p>
+
+          <h3>Strategic Areas</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Marketing Area</th><th>Neuromarketing Contribution</th></tr></thead>
+              <tbody>
+                <tr><td>Advertising</td><td>Improves attention and emotional impact</td></tr>
+                <tr><td>Packaging</td><td>Increases shelf visibility and recall</td></tr>
+                <tr><td>Pricing</td><td>Tests reaction to price cues</td></tr>
+                <tr><td>Product Design</td><td>Aligns features with user preference</td></tr>
+                <tr><td>UX Design</td><td>Simplifies digital journeys</td></tr>
+                <tr><td>Branding</td><td>Strengthens emotional identity</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="highlight-box">
+            <p>A brand might assume consumers want more detail on a product page. But eye-tracking can show that users focus mainly on images, trust indicators, and simple value cues. That insight helps marketers simplify the page and improve conversions.</p>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 6 ─── -->
+        <section id="section6" class="research-section">
+          <h2><span class="section-num">06</span> Real-World Applications</h2>
+          <p>Neuromarketing is used in many practical business settings. It is not limited to academic labs. Companies use it to improve ads, packaging, websites, store layouts, and customer journeys.</p>
+
+          <h3>Common Applications</h3>
+          <ul>
+            <li>Ad testing before launch.</li>
+            <li>Packaging and shelf design.</li>
+            <li>Website and app optimization.</li>
+            <li>Retail layout and in-store behavior.</li>
+            <li>Brand recall and emotional positioning.</li>
+          </ul>
+
+          <h3>Industry Use Cases</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Industry</th><th>Common Use</th></tr></thead>
+              <tbody>
+                <tr><td>FMCG</td><td>Packaging and shelf appeal</td></tr>
+                <tr><td>Retail</td><td>Layout and digital behavior</td></tr>
+                <tr><td>Automotive</td><td>Ad emotion and brand trust</td></tr>
+                <tr><td>Healthcare</td><td>Simplifying trust and clarity</td></tr>
+                <tr><td>Entertainment</td><td>Trailer and content testing</td></tr>
+                <tr><td>E-commerce</td><td>Product page and checkout optimization</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Neuromarketing works best when it supports creative judgment rather than replacing it. The strongest brands use these insights to remove friction, sharpen messaging, and make the consumer journey easier to understand.</p>
+        </section>
+
+        <!-- ─── SECTION 7 ─── -->
+        <section id="section7" class="research-section">
+          <h2><span class="section-num">07</span> Ethical Concerns and Limitations</h2>
+          <p>Neuromarketing is powerful, but it also raises ethical questions. Because it studies subconscious behavior and physiological signals, there is concern that the field could be used to manipulate consumers too aggressively. That is why consent and transparency matter so much.</p>
+          <p>Privacy is another major issue. Brain and biometric data are more sensitive than ordinary survey responses. Companies must handle this information responsibly and avoid collecting more than they need.</p>
+
+          <h3>Key Ethical Concerns</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Concern</th><th>Why It Matters</th></tr></thead>
+              <tbody>
+                <tr><td>Manipulation</td><td>Could brands influence consumers unfairly?</td></tr>
+                <tr><td>Privacy</td><td>Are biometric and brain data protected?</td></tr>
+                <tr><td>Consent</td><td>Do consumers know what is being measured?</td></tr>
+                <tr><td>Bias</td><td>Are findings valid across populations?</td></tr>
+                <tr><td>Overinterpretation</td><td>Are small samples being read too broadly?</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Limitations</h3>
+          <ul>
+            <li>Tools can be expensive.</li>
+            <li>Sample sizes are often small.</li>
+            <li>Results may not generalize everywhere.</li>
+            <li>A brain response does not guarantee a purchase.</li>
+          </ul>
+          <p>The right approach is to treat neuromarketing as a decision-support tool, not as a way to control people. Ethical use builds trust and strengthens the credibility of the field.</p>
+        </section>
+
+        <!-- ─── SECTION 8 ─── -->
+        <section id="section8" class="research-section">
+          <h2><span class="section-num">08</span> Neuromarketing in the Digital Age</h2>
+          <p>The digital age has made neuromarketing even more relevant. Consumers now interact with brands through short videos, mobile apps, landing pages, social media, and personalized recommendations. In this environment, attention is brief and competition is intense.</p>
+
+          <h3>Digital-Age Applications</h3>
+          <ul>
+            <li>Testing thumbnails, headlines, and video openings.</li>
+            <li>Improving app and website usability.</li>
+            <li>Measuring scroll depth and click behavior.</li>
+            <li>Optimizing ad creative for fast attention capture.</li>
+            <li>Personalizing content based on response patterns.</li>
+          </ul>
+
+          <!-- LINE CHART: Digital Engagement Trend -->
+          <div class="chart-card">
+            <p class="chart-title">Digital Engagement Index — Growth Over Time (2021–2026)</p>
+            <canvas id="digitalChart"></canvas>
+          </div>
+
+          <p>Digital marketing is increasingly about micro-decisions. A user may scroll, pause, click, abandon, or convert in a matter of seconds. Neuromarketing helps explain which cues drive those behaviors and how brands can respond more effectively.</p>
+        </section>
+
+        <!-- ─── SECTION 9 ─── -->
+        <section id="section9" class="research-section">
+          <h2><span class="section-num">09</span> Future Outlook</h2>
+          <p>The future of neuromarketing looks promising, especially as AI, wearables, and biometric tools become more advanced. The field is likely to become more scalable, more integrated with digital marketing, and more useful for personalization.</p>
+          <p>One likely trend is AI-assisted emotion analysis. This will help businesses analyze facial expressions, attention patterns, and response data more quickly. Another trend is cross-cultural neuromarketing, where brands compare emotional responses across regions to build more relevant campaigns.</p>
+
+          <h3>Future Trends</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Trend</th><th>Likely Impact</th></tr></thead>
+              <tbody>
+                <tr><td>AI Integration</td><td>Faster analysis and prediction</td></tr>
+                <tr><td>Digital Biometrics</td><td>Better understanding of behavior online</td></tr>
+                <tr><td>Personalization</td><td>More relevant brand experiences</td></tr>
+                <tr><td>Ethics and Regulation</td><td>Stronger privacy safeguards</td></tr>
+                <tr><td>Cross-Cultural Testing</td><td>Better global campaign design</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Market Outlook</h3>
+          <p>Recent industry estimates suggest the neuromarketing market is expected to continue growing, with a projected value of approximately USD 1.83 billion in 2026 and a CAGR of 6.76% — reaching USD 2.53 billion by 2031. That indicates the field is moving from a niche specialty toward broader commercial relevance.</p>
+
+          <!-- BAR CHART: Market Growth -->
+          <div class="chart-card">
+            <p class="chart-title">Neuromarketing Market Size — Projected Growth (USD Billion, 2026–2031)</p>
+            <canvas id="marketChart"></canvas>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 10 ─── -->
+        <section id="section10" class="research-section">
+          <h2><span class="section-num">10</span> Practical Takeaways for Marketers</h2>
+          <p>Neuromarketing offers useful lessons even if a company does not use advanced neuroscience tools. The biggest takeaway is that consumers respond strongly to simplicity, emotion, trust, and memory. Brands that understand this can improve their communication and reduce friction in the buying process.</p>
+
+          <h3>Practical Lessons</h3>
+          <ul>
+            <li>Keep messages clear and visually simple.</li>
+            <li>Focus on emotional value, not only features.</li>
+            <li>Test creative before scaling campaigns.</li>
+            <li>Make digital journeys easy to follow.</li>
+            <li>Use research ethically and transparently.</li>
+            <li>Remember that attention is a limited resource.</li>
+          </ul>
+
+          <div class="highlight-box">
+            <p>This is why neuromarketing is so valuable. It reminds marketers that effective strategy should reflect how people truly behave, not just how they say they behave.</p>
+          </div>
+        </section>
+
+        <!-- ─── SECTION 11 ─── -->
+        <section id="section11" class="research-section">
+          <h2><span class="section-num">11</span> Conclusion</h2>
+          <p>Neuromarketing is one of the most important bridges between science and marketing. It helps explain what drives attention, emotion, memory, and choice, giving brands a deeper understanding of consumer behavior. Instead of depending only on surveys and opinions, companies can use neuromarketing to observe how people actually react.</p>
+          <p>At the same time, the field must be used carefully. Ethical concerns around privacy, consent, and manipulation are real, and the limitations of the tools must be respected. Neuromarketing is most effective when it is used to improve clarity, relevance, and user experience rather than to exploit subconscious behavior.</p>
+          <p>As marketing becomes more digital, personalized, and competitive, neuromarketing will likely become even more relevant. Businesses that understand the emotional and subconscious side of decision-making will be better prepared to create campaigns, products, and experiences that truly resonate.</p>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="research-footer">
+    <div class="container">
+      <p>© 2026 My Marketing Research &nbsp;·&nbsp; Achintya Verma</p>
+    </div>
+  </footer>
+
+  <script>
+    const chartDefaults = {
+      font: { family: "'DM Sans', sans-serif" },
+      color: '#8888a0'
+    };
+    Chart.defaults.font.family = chartDefaults.font.family;
+    Chart.defaults.color = chartDefaults.color;
+
+    /* ── 1. BAR CHART: Tool Relevance ── */
+    new Chart(document.getElementById('toolChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Eye Tracking', 'EEG', 'Facial Coding', 'fMRI', 'GSR', 'Heart Rate'],
+        datasets: [{
+          label: 'Research Use Score',
+          data: [10, 9, 8, 8, 7, 6],
+          backgroundColor: [
+            'rgba(110, 86, 207, 0.85)',
+            'rgba(110, 86, 207, 0.75)',
+            'rgba(110, 86, 207, 0.65)',
+            'rgba(110, 86, 207, 0.65)',
+            'rgba(110, 86, 207, 0.55)',
+            'rgba(110, 86, 207, 0.45)',
+          ],
+          borderColor: 'rgba(110, 86, 207, 1)',
+          borderWidth: 1,
+          borderRadius: 6,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#18181f',
+            borderColor: 'rgba(255,255,255,0.08)',
+            borderWidth: 1,
+            titleColor: '#f0f0f5',
+            bodyColor: '#8888a0',
+            callbacks: {
+              label: ctx => ` Score: ${ctx.parsed.y} / 10`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: { color: '#8888a0', font: { size: 12 } }
+          },
+          y: {
+            min: 0, max: 10,
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: {
+              color: '#8888a0',
+              stepSize: 2,
+              font: { size: 12 }
+            }
+          }
+        }
+      }
+    });
+
+    /* ── 2. LINE CHART: Digital Engagement Index ── */
+    new Chart(document.getElementById('digitalChart'), {
+      type: 'line',
+      data: {
+        labels: ['2021', '2022', '2023', '2024', '2025', '2026'],
+        datasets: [{
+          label: 'Digital Engagement Index',
+          data: [42, 48, 55, 61, 68, 74],
+          borderColor: '#22d3ee',
+          backgroundColor: 'rgba(34, 211, 238, 0.08)',
+          pointBackgroundColor: '#22d3ee',
+          pointBorderColor: '#0a0a0f',
+          pointBorderWidth: 2,
+          pointRadius: 5,
+          pointHoverRadius: 7,
+          borderWidth: 2.5,
+          tension: 0.4,
+          fill: true,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#18181f',
+            borderColor: 'rgba(255,255,255,0.08)',
+            borderWidth: 1,
+            titleColor: '#f0f0f5',
+            bodyColor: '#8888a0',
+            callbacks: {
+              label: ctx => ` Index: ${ctx.parsed.y}`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: { color: '#8888a0', font: { size: 12 } }
+          },
+          y: {
+            min: 30,
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: { color: '#8888a0', font: { size: 12 } }
+          }
+        }
+      }
+    });
+
+    /* ── 3. BAR CHART: Market Growth ── */
+    new Chart(document.getElementById('marketChart'), {
+      type: 'bar',
+      data: {
+        labels: ['2026', '2027', '2028', '2029', '2030', '2031'],
+        datasets: [{
+          label: 'Market Size (USD Billion)',
+          data: [1.83, 1.95, 2.08, 2.22, 2.37, 2.53],
+          backgroundColor: [
+            'rgba(52, 211, 153, 0.5)',
+            'rgba(52, 211, 153, 0.57)',
+            'rgba(52, 211, 153, 0.64)',
+            'rgba(52, 211, 153, 0.71)',
+            'rgba(52, 211, 153, 0.78)',
+            'rgba(52, 211, 153, 0.88)',
+          ],
+          borderColor: 'rgba(52, 211, 153, 0.9)',
+          borderWidth: 1,
+          borderRadius: 6,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: '#18181f',
+            borderColor: 'rgba(255,255,255,0.08)',
+            borderWidth: 1,
+            titleColor: '#f0f0f5',
+            bodyColor: '#8888a0',
+            callbacks: {
+              label: ctx => ` $${ctx.parsed.y.toFixed(2)}B`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: { color: '#8888a0', font: { size: 12 } }
+          },
+          y: {
+            min: 1.5,
+            grid: { color: 'rgba(255,255,255,0.04)' },
+            ticks: {
+              color: '#8888a0',
+              font: { size: 12 },
+              callback: val => `$${val.toFixed(2)}B`
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
